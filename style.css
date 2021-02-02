@@ -261,6 +261,21 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
+.about .about-content .right .accounts {
+  display: block;
+}
+
+.about .about-content .right .accounts a {
+  background: none;
+  border: none;
+  padding: 10px 10px;
+}
+
+.about .about-content .right .accounts i {
+  font-size: 30px;
+  color: #111;
+}
+
 .about .about-content .right a:hover {
   color: #F0C906;
   background: none;
