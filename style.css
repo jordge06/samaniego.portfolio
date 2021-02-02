@@ -299,6 +299,10 @@ section .title::after {
   padding: 10px;
 }
 
+.proj .desc p .head {
+  font-weight: 600;
+}
+
 .proj .app-name span a {
   color: #F0C906;
   text-decoration: none;
@@ -366,6 +370,7 @@ section .title::after {
 .owl-dots {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .owl-dot {
@@ -388,62 +393,6 @@ section .title::after {
   background: #F0C906!important;
 }
 
-
-/* Personal Projects */
-
-/* .project, .proj {
-  color: #fff;
-  background: #111;
-}
-
-.project .title::before {
-  background: #fff;
-}
-
-.project .title::after {
-  background: #111;
-  content: "what I do?"
-}
-
-.project .project-content .card {
-  width: calc(33% - 20px);
-  background: #222;
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.project .project-content .card:hover {
-    transform: scale(1.05);
-    background: #F0C906;
-}
-
-.project .project-content .card .box {
-  transition: all 0.3s ease;
-}
-
-.project .project-content .card:hover .box {
-  transform: scale(1.05);
-}
-
-.project .project-content .card i {
-  font-size: 50px;
-  color: #F0C906;
-  transition: color 0.3s ease;
-}
-
-.project .project-content .card:hover i {
-  color: #fff;
-}
-
-.project .project-content .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-} */
-
 /* Skills Section */
 
 .skills .title::after {
@@ -464,29 +413,19 @@ section .title::after {
   text-align: justify;
 }
 
-.skills .skills-content .left a {
-  display: inline-block;
-  background: #F0C906;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 10px;
-  border: 2px solid #F0C906;
+.skills .skills-content .left .highlights a {
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.skills .skills-content .left a:hover {
-  color: #F0C906;
-  background: none;
+.skills .skills-content .left .highlights a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
-.skills .skills-content .left .text {
-  font-size:
-}
-
-.skills .skills-content .right .bars {
+/* .skills .skills-content .right .bars {
   margin-bottom: 15px;
 }
 
@@ -495,47 +434,20 @@ section .title::after {
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 .skills .skills-content .right span {
   font-weight: 500;
   font-size: 18px;
 }
 
-.skills .skills-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: lightgrey;
-  position: relative;
+.skills .skills-content .right .skill-set {
+  margin: 15px;
 }
 
-.skills .skills-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: #F0C906;
-}
-
-.skills .skills-content .right .html::before {
-  width: 90%;
-}
-
-.skills .skills-content .right .css::before {
-  width: 40%;
-}
-
-.skills .skills-content .right .android::before {
-  width: 80%;
-}
-
-.skills .skills-content .right .spring::before {
-  width: 40%;
-}
-
-.skills .skills-content .right .sql::before {
-  width: 40%;
+.skills .skills-content .right .skill-set span {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Contact Section */
