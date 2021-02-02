@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -53,6 +57,7 @@
 }
 
 .navbar .menu li a {
+  display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -74,6 +79,30 @@
   font-size: 23px;
   cursor: pointer;
   display: none;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: #F0C906;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 99999;
+  font-size: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Home Section*/
@@ -138,6 +167,20 @@ section {
   padding: 100px 0;
 }
 
+.about, .project, .skills, .contact, footer {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.project .project-content,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 section .title {
   position: relative;
   text-align: center;
@@ -172,19 +215,8 @@ section .title::after {
 
 /* About Section */
 
-.about, .project {
-  font-family: 'Poppins', sans-serif;
-}
-
 .about .title::after {
-  content: "Who I Am?";
-}
-
-.about .about-content, .project .project-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  content: "who I Am?";
 }
 
 .about .about-content .left {
@@ -247,7 +279,7 @@ section .title::after {
 
 .project .title::after {
   background: #111;
-  content: "What I'm Capable?"
+  content: "what I do?"
 }
 
 .project .project-content .card {
@@ -289,6 +321,230 @@ section .title::after {
   margin: 10px 0 7px 0;
 }
 
+/* Skills Section */
+
+.skills .title::after {
+  content: "what I know?"
+}
+
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+  text-align: justify;
+}
+
+.skills .skills-content .left a {
+  display: inline-block;
+  background: #F0C906;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #F0C906;
+  transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+  color: #F0C906;
+  background: none;
+}
+
+.skills .skills-content .left .text {
+  font-size:
+}
+
+.skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #F0C906;
+}
+
+.skills .skills-content .right .html::before {
+  width: 90%;
+}
+
+.skills .skills-content .right .css::before {
+  width: 40%;
+}
+
+.skills .skills-content .right .android::before {
+  width: 80%;
+}
+
+.skills .skills-content .right .spring::before {
+  width: 40%;
+}
+
+.skills .skills-content .right .sql::before {
+  width: 40%;
+}
+
+/* Contact Section */
+.contact .title::after {
+  content: "get in touch";
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.contact .contact-content .left p{
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+
+.contact .contact-content .left .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .left .row .info {
+  margin-left: 30px;
+}
+
+.contact .contact-content .left .row i{
+  font-size: 25px;
+  color: #F0C906;
+}
+
+.contact .contact-content .left .info .head {
+  font-weight: 500;
+}
+
+.contact .contact-content .left .info .subtitle {
+  color: #333;
+}
+
+.contact .right form .fields {
+  display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.contact .right form .name {
+  margin-right: 10px;
+}
+
+.contact .right form .email {
+  margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .right form .button {
+  height: 47px;
+  width: 170px;
+}
+
+.contact .right form .button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #F0C906;
+  background: #F0C906;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover {
+  color: #F0C906;
+  background: none;
+}
+
+/* Footer Section */
+footer {
+  background: #111;
+  padding: 20px 23px;
+  color: white;
+  text-align: center;
+}
+
+footer span {
+  display: block;
+}
+
+footer span a {
+  color: #F0C906;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
 
 
 
@@ -387,6 +643,12 @@ section .title::after {
   .project .project-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
+  }
+
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
   }
 }
 
