@@ -325,7 +325,7 @@ section .title::after {
 .proj .desc .head {
   font-size: 18px;
   font-weight: 300;
-
+  color: #FB623F;
 }
 
 .proj .carousel .card:hover {
