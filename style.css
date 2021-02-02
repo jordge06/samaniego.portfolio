@@ -167,12 +167,11 @@ section {
   padding: 100px 0;
 }
 
-.about, .project, .skills, .contact, footer {
+.about, .skills, .contact, .proj, footer {
   font-family: 'Poppins', sans-serif;
 }
 
 .about .about-content,
-.project .project-content,
 .skills .skills-content,
 .contact .contact-content {
   display: flex;
@@ -283,7 +282,116 @@ section .title::after {
 
 /* Personal Projects */
 
-.project {
+.proj {
+  color: #fff;
+  background: #111;
+}
+
+.proj .title::before {
+  background: #fff;
+}
+.proj .title::after {
+  background: #111;
+  content: "what i do";
+}
+
+.proj .app-name {
+  padding: 10px;
+}
+
+.proj .app-name span a {
+  color: #F0C906;
+  text-decoration: none;
+}
+
+.proj .app-name span a:hover {
+  text-decoration: underline;
+}
+
+.proj .carousel .card {
+  background: #222;
+  border-radius: 6px;
+  padding: 20px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.proj .desc {
+  margin-bottom: 15px;
+  padding: 15px;
+  justify-content: center;
+}
+
+.proj .desc .head {
+  font-size: 18px;
+  font-weight: 300;
+
+}
+
+.proj .carousel .card:hover {
+  background: #F0C906;
+}
+
+.proj .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.proj .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.proj .carousel .card .text {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 10px 0 7px 0;
+}
+
+.proj .carousel .card img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 5%;
+  border: 2px solid #F0C906;
+  transition: all 0.3s ease;
+}
+
+.proj .carousel .card:hover img {
+  border-color: #a1a1a1;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid #F0C906!important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot.active:hover {
+  background: #F0C906!important;
+}
+
+
+/* Personal Projects */
+
+/* .project, .proj {
   color: #fff;
   background: #111;
 }
@@ -308,7 +416,7 @@ section .title::after {
 }
 
 .project .project-content .card:hover {
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
     background: #F0C906;
 }
 
@@ -334,7 +442,7 @@ section .title::after {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
-}
+} */
 
 /* Skills Section */
 
@@ -655,10 +763,10 @@ footer span a:hover {
     flex: 100%;
   }
 
-  .project .project-content .card {
+  /* .project .project-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
-  }
+  } */
 
   .skills .skills-content .column,
   .contact .contact-content .column {
@@ -684,9 +792,9 @@ footer span a:hover {
     font-size: 20px;
   }
 
-  .project .project-content .card {
+  /* .project .project-content .card {
     width: 100%;
-  }
+  } */
 }
 
 @media (max-width: 500px) {

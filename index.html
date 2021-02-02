@@ -9,6 +9,10 @@
     <script src="https://use.fontawesome.com/4c04f8fc0d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
   </head>
   <body>
   <div class="scroll-up-btn">
@@ -20,7 +24,7 @@
           <ul class="menu">
             <li><a href="#home" class="menu-btn">Home</a></li>
             <li><a href="#about" class="menu-btn">About</a></li>
-            <li><a href="#project" class="menu-btn">Personal Projects</a></li>
+            <li><a href="#proj" class="menu-btn">Personal Projects</a></li>
             <li><a href="#skills" class="menu-btn">Skills</a></li>
             <li><a href="#contact" class="menu-btn">Contact Me</a></li>
           </ul>
@@ -64,35 +68,111 @@
       </div>
     </section>
 
-    <!-- Personal Project Section -->
-    <section class="project" id="project">
+    <!-- Personal Projects Section -->
+
+    <section class="proj" id="proj">
       <div class="max-width">
         <h2 class="title">Personal Project</h2>
-        <div class="project-content">
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-paint-brush"></i>
-              <div class="text">Web Design</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <h3 class="app-name">TV Gallery App - <span><a href="https://github.com/jordge06/TVGalleryApp" target="_blank">Source Code</a></span></h3>
+          <div class="desc">
+            <p><span class="head">App Description - </span> A simple Android App that let users browse and view all availble TV Shows from around the world. The app uses a free online source called TMDB.org.</p>
+            <p><span class="head">Language and IDE Used - </span> Java, Android Studio</p>
+            <p><span class="head">Architecture - </span> Model View View-Model, Databinding</p>
+          </div>
+          <div class="carousel owl-carousel">
+            <div class="card">
+              <div class="box">
+                <img src="images/tvgallery/image3.png" alt="">
+                <div class="text">TV Details Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/tvgallery/image1.png" alt="">
+                <div class="text">Main Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/tvgallery/image2.png" alt="">
+                <div class="text">Watchlist Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/tvgallery/image4.png" alt="">
+                <div class="text">Search Page</div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-chart-line"></i>
-              <div class="text">Advertising</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h3 class="app-name">Blogging App with Firebase - <span><a href="https://github.com/jordge06/BloggingApp" target="_blank">Source Code</a></span></h3>
+          <div class="desc">
+            <p><span class="head">App Description - </span> A Instagram like app the let users upload image, like image, comment to a post, follow user, etc. This app uses online service called Firebase developed by Google.</p>
+            <p><span class="head">Language and IDE Used - </span> Java, Android Studio</p>
+            <p><span class="head">Architecture - </span> Model View View-Model</p>
+          </div>
+          <div class="carousel owl-carousel">
+            <div class="card">
+              <div class="box">
+                <img src="images/bloggingapp/image1.png" alt="">
+                <div class="text">Main Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/bloggingapp/image2.png" alt="">
+                <div class="text">Search Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/bloggingapp/image3.png" alt="">
+                <div class="text">New Post Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/bloggingapp/image4.png" alt="">
+                <div class="text">Notification Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/bloggingapp/image5.png" alt="">
+                <div class="text">Profile Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/bloggingapp/image6.png" alt="">
+                <div class="text">Friends Profile Page</div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-code"></i>
-              <div class="text">Apps Design</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h3 class="app-name">Glucose Management App - <span><a href="https://github.com/jordge06/GlucoseManagement" target="_blank">Source Code</a></span></h3>
+          <div class="desc">
+            <p><span class="head">App Description - </span> A simple Logging App the let user log their daily sugar level, bp, weight etc. All the data will be presented through a graph.</p>
+            <p><span class="head">Language and IDE Used - </span> Java, Android Studio</p>
+            <p><span class="head">Architecture - </span> Model View View-Model</p>
+          </div>
+          <div class="carousel owl-carousel">
+            <div class="card">
+              <div class="box">
+                <img src="images/glucose/image1.png" alt="">
+                <div class="text">Main Page</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/glucose/image2.png" alt="">
+                <div class="text">New Log Page</div>
+              </div>
             </div>
           </div>
-        </div>
+
       </div>
     </section>
 
