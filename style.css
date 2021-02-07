@@ -108,7 +108,7 @@ html {
 /* Home Section*/
 .home {
   display: flex;
-  background: url("images/banner.jpg") no-repeat center;
+  background: url("images/compressed_banner.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
