@@ -218,6 +218,10 @@ section .title::after {
   content: "who I Am?";
 }
 
+.add-indent {
+  text-indent: 25px; /* Adjust the value as needed */
+}
+
 .about .about-content .left {
   width: 45%;
 }
@@ -399,9 +403,13 @@ section .title::after {
   content: "what I know?"
 }
 
-.skills .skills-content .column {
-  width: calc(50% - 30px);
+.column {
+  margin-bottom: 20px;
 }
+
+/* .skills .skills-content .column {
+  width: calc(50% - 30px);
+} */
 
 .skills .skills-content .left .text {
   font-size: 20px;
